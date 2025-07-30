@@ -1,17 +1,16 @@
 # 12345678
-
-num=int(input("enter a numb:"))
-is_prime=True
-if 1 <=num:
-    is_prime=False
+num =145
+temp=num
+total=0
+while temp>0:
+    digit=temp%10
+    fact=math.factorial(digit)
+    total=total+fact
+    temp=temp//10
+ 
+if total==num:
+    print("yes")
 else:
-    for i in r(2, int(num**0.5)+1):
-        if num% i ==0:
-            is_prime =False
-            break
-if is_prime:
-    print(num,"is a prime number")
+    print("no")
 
-else:
-    print(num,"is not a prime number")
  
