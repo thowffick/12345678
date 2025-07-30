@@ -1,0 +1,17 @@
+# 12345678
+
+num=int(input("enter a numb:"))
+is_prime=True
+if 1 <=num:
+    is_prime=False
+else:
+    for i in r(2, int(num**0.5)+1):
+        if num% i ==0:
+            is_prime =False
+            break
+if is_prime:
+    print(num,"is a prime number")
+
+else:
+    print(num,"is not a prime number")
+ 
